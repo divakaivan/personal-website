@@ -32,7 +32,15 @@ code {
 }
 
 .dark-mode .fab {
-  color: white;
+  color: ghostwhite;
+}
+
+.dark-mode .attr {
+  background-color: #6992e4 !important;
+}
+
+.dark-mode .attr:hover {
+  background-color: transparent !important;
 }
 
 /* CSS FOR TOGGLE BETWEEN DARK / LIGHT MODE */
