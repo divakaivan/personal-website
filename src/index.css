@@ -23,6 +23,9 @@ code {
   color: #333;
 }
 
+.container {
+  max-width: 1000px !important;
+}
 
 /* DARK THEME */
 
@@ -33,6 +36,11 @@ code {
 
 .dark-mode .fab {
   color: ghostwhite;
+}
+
+.dark-mode .card {
+  background-color: #1a1919;
+  border-color: #939399;
 }
 
 .dark-mode .attr {

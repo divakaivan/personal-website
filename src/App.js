@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import Header from "./components/Header";
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Home from "./components/Home";
+import WorkExperience from "./components/WorkExperience";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
                     <Header darkMode={darkMode} setDarkMode={setDarkMode}/>
                     <Switch>
                         <Route path="/" component={Home} exact/>
+                        <Route path="/work" component={WorkExperience} />
                     </Switch>
                 </div>
             </BrowserRouter>
