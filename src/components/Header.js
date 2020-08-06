@@ -1,6 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import styled from "styled-components";
+import ToggleTheme from "./ToggleTheme";
+import ReactTooltip from 'react-tooltip';
 
 const H1 = styled.h1`
     font-size: 6.5vw;
@@ -79,8 +81,9 @@ const Navigation = styled.div`
   }
 `;
 
-const Header = () => (
+const Header = ({darkMode, setDarkMode}) => (
     <div className="container">
+        <ToggleTheme darkMode={darkMode} setDarkMode={setDarkMode}/>
         <H1 className="text-center">Ivan Ivanov</H1>
         <Dev className="text-center">
             <span className="attr">Fullstack developer</span>
@@ -94,11 +97,11 @@ const Header = () => (
             <span className="attr">LoL esports enthusiast</span>
         </Dev>
         <Icons className="text-center">
-            <a target="_blank" rel="noopener noreferrer" href='https://github.com/divakaivan'><i className="fab fa-github"></i></a>
-            <a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/ivansivanov/'><i className="fab fa-linkedin"></i></a>
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/divakaivan/personal-website/raw/master/IvanIvanovCV.pdf"><i className="fab fa fa-file"></i></a>
+            <a data-tip="My Github" target="_blank" rel="noopener noreferrer" href='https://github.com/divakaivan'><i className="fab fa-github"></i></a>
+            <a data-tip="My LinkedIN" target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/ivansivanov/'><i className="fab fa-linkedin"></i></a>
+            <a data-tip="Download CV" target="_blank" rel="noopener noreferrer" href="https://github.com/divakaivan/personal-website/raw/master/IvanIvanovCV.pdf"><i className="fab fa fa-file"></i></a>
             {/*  TODO change the link to a public repo with the CV. */}
-            <a href="mailto:isivanov98@outlook.com"><i className="fab fas fa-envelope"></i></a>
+            <a data-tip="Send email" href="mailto:isivanov98@outlook.com"><i className="fab fas fa-envelope"></i></a>
         </Icons>
         <Navigation className="text-center">
             <Link to="/">About</Link>
@@ -108,6 +111,7 @@ const Header = () => (
             <Link to="/about">Extra</Link>
         </Navigation>
         <Hr/>
+        <ReactTooltip className="tooltip-extra-style" />
     </div>
 
 );
