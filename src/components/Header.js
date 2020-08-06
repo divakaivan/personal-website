@@ -96,7 +96,7 @@ const Header = () => (
         <Icons className="text-center">
             <a target="_blank" rel="noopener noreferrer" href='https://github.com/divakaivan'><i className="fab fa-github"></i></a>
             <a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/ivansivanov/'><i className="fab fa-linkedin"></i></a>
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/divakaivan/icc-blog/raw/master/IvanIvanovCV.pdf"><i className="fab fa fa-file"></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/divakaivan/personal-website/raw/master/IvanIvanovCV.pdf"><i className="fab fa fa-file"></i></a>
             {/*  TODO change the link to a public repo with the CV. */}
             <a href="mailto:isivanov98@outlook.com"><i className="fab fas fa-envelope"></i></a>
         </Icons>
