@@ -86,7 +86,7 @@ const Header = ({darkMode, setDarkMode}) => (
         <ToggleTheme darkMode={darkMode} setDarkMode={setDarkMode}/>
         <H1 className="text-center">Ivan Ivanov</H1>
         <Dev className="text-center">
-            <span className="attr">Fullstack developer</span>
+            <span className="attr">Webapp developer</span>
             <Br/>
             <span>•</span>
             <Br/>

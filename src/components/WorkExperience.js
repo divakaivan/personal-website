@@ -1,10 +1,16 @@
 import React from "react";
+import styled from "styled-components"
 
+const CardDiv = styled.div`
+  @media (min-width: 600px) {
+    margin: 0 25px 0 25px;
+  }
+`;
 
 const WorkExperience = () => {
     return (
         <>
-            <div className="card mx-5">
+            <CardDiv className="card">
                 <div className="card-body">
                     <div className="card-title font-weight-bold" style={{fontSize: "25px"}}>Analyst in Lloyds Banking Group</div>
                     <div className="card-subtitle mb-3 text-muted">Jul 2019 - Jul 2020</div>
@@ -16,21 +22,22 @@ const WorkExperience = () => {
                             <li>Inform and motivate colleagues on how to document their code</li>
                             <li>Create and maintain Python (Sphinx) and React (Styleguidist) documentation websites</li>
                         </ul>
-                        <p>
+                        <section>
                             Technologies used: &nbsp;
-                            <img width={32} src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" alt="React"/>
+                            <img width={24} src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" alt="JavaScript"/>
+                            |<img width={32} src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" alt="React"/>
                             |<img width={32} src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" alt="Python"/>
                             | PySpark | Pandas |&#160;
                             <i className="fab haha fa-github"></i> |&#160;
                             <img width={28} src="https://github.com/devops-workflow/jenkins-icons/blob/master/icons/jenkins-logo-48x48.png?raw=true" alt="Jenkins"/>
-                            <br/>
-                            Other Skills:
+                            <br/><br/>
+                            <em>Other Skills:</em>
                             <ul>
                                 <li>Develop and work under the agile framework - Scrum</li>
                                 <li>Communicate the development process and updates with stakeholders</li>
                                 <li>Teamwork, critical thinking, problem solving, attention to detail</li>
                             </ul>
-                            Extracurricular activities:
+                            <em>Extracurricular activities:</em>
                             <ul>
                                 <li>
                                     Teach Python to other placement students and becoming a LBG python mentor for delivering
@@ -39,14 +46,14 @@ const WorkExperience = () => {
                                 </li>
                                 <li>Organise a full day FIFA 20 charity tournament for LBG colleagues</li>
                             </ul>
-                        </p>
+                        </section>
                     </div>
                 </div>
-            </div>
+            </CardDiv>
             {/* TODO ADD OTHER JOB CARDS HERE */}
-            <div className="card mt-4 mx-5">
+            <CardDiv className="card mt-4">
                 <div className="card-title">Hello</div>
-            </div>
+            </CardDiv>
         </>
     )
 };

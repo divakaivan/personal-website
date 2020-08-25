@@ -18,7 +18,7 @@ function App() {
     return (
         <div className={darkMode ? "dark-mode":"light-mode"}>
             <BrowserRouter>
-                <div className="container">
+                <div className="container pb-5">
                     <Header darkMode={darkMode} setDarkMode={setDarkMode}/>
                     <Switch>
                         <Route path="/" component={Home} exact/>
