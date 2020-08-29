@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Header from "./components/Header";
-import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
+import {BrowserRouter, Redirect, Route, Switch} from 'react-router-dom';
 import Home from "./components/Home";
 import WorkExperience from "./components/WorkExperience";
 import Extracurricular from "./components/Extracurricular";
@@ -14,7 +14,10 @@ function App() {
     }, [darkMode]);
 
     function getInitialMode() {
-        return JSON.parse(localStorage.getItem('dark'))
+        if (localStorage.getItem('dark')) {
+            return JSON.parse(localStorage.getItem('dark'))
+        }
+        return !window.matchMedia("(prefers-color-scheme:light)").matches
     }
 
     return (
