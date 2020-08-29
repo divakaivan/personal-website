@@ -1,8 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import Header from "./components/Header";
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
 import Home from "./components/Home";
 import WorkExperience from "./components/WorkExperience";
+import Extracurricular from "./components/Extracurricular";
+import Education from "./components/Education";
 
 
 function App() {
@@ -23,6 +25,9 @@ function App() {
                     <Switch>
                         <Route path="/" component={Home} exact/>
                         <Route path="/work" component={WorkExperience} />
+                        <Route path="/extracurricular" component={Extracurricular} />
+                        <Route path="/education" component={Education}/>
+                        <Redirect to="/" />
                     </Switch>
                 </div>
             </BrowserRouter>
