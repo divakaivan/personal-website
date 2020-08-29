@@ -12,10 +12,8 @@ const Div = styled.div`
 
 const Home = () => (
     <Div className="container">
-        <section className="mb-5 text-justify">
-            <div className="intro mb-4">
-                <h2>Hello, my name is Ivan</h2>
-            </div>
+        <section className="mb-5">
+            <h2 className="mb-4">Hello, my name is Ivan</h2>
             <h5 className="mb-4">
                 <em>
                     I am excited to become a developer. The day-to-day problem solving inspires me to think in creative ways
@@ -26,7 +24,7 @@ const Home = () => (
             <h5 className="mx-2 ">How come I want to become a programmer but I study accounting at university?</h5>
             <h6 className="mx-2">
                 <em>
-                    I got inspired from my <a href="/work" style={{color: "inherit"}}>amazing placement</a>
+                    I got inspired from my <a href="/work" style={{color: "inherit"}}>amazing placement </a>
                     at Lloyds Banking Group where I wrote my first line of code. And after the first few
                     months of learning and writing code, I knew that this is what I want to do.
                 </em>
@@ -34,7 +32,7 @@ const Home = () => (
         </section>
         <section className="mb-4">
             <h2 className="mb-4">What do I do in my free time? </h2>
-            <h6 className="text-justify">
+            <h6 className="text-left">
                 Besides study for my accounting modules and squeezing in some coding whenever I can...
                 <ul className="mt-3">
                     <li>I love going to the gym and working out</li>
