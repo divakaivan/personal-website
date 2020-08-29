@@ -79,6 +79,13 @@ const Navigation = styled.div`
   a {
     padding: 0 1rem 1rem 1rem;    
   }
+  @media (max-width: 500px) {
+      display: flex;
+      flex-direction: column;
+      span {
+        display: none;
+      }
+  }
 `;
 
 const Header = ({darkMode, setDarkMode}) => (
@@ -86,7 +93,7 @@ const Header = ({darkMode, setDarkMode}) => (
         <ToggleTheme darkMode={darkMode} setDarkMode={setDarkMode}/>
         <H1 className="text-center">Ivan Ivanov</H1>
         <Dev className="text-center">
-            <span className="attr">Webapp developer</span>
+            <span className="attr">Upcoming developer</span>
             <Br/>
             <span>•</span>
             <Br/>
@@ -104,10 +111,12 @@ const Header = ({darkMode, setDarkMode}) => (
         </Icons>
         <Navigation className="text-center">
             <Link to="/">About</Link>
-                        |
-            <Link to="/work">Work experience</Link>
-                        |
-            <Link to="/about">Extra</Link>
+                        <span>|</span>
+            <Link to="/work">Work</Link>
+                        <span>|</span>
+            <Link to="/extracurricular">Extracurriculars</Link>
+                        <span>|</span>
+            <Link to="/education">Education</Link>
         </Navigation>
         <Hr/>
         <ReactTooltip className="tooltip-extra-style" />
