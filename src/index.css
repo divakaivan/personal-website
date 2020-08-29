@@ -115,3 +115,11 @@ input[type="checkbox"].checkbox + label {
 .toggle-container > span:last-child {
   margin-top: 5px;
 }
+
+.theme-toggle.dark-mode-false .react-toggle-track {
+  background-color: rgba(221, 221, 0, 0.77) !important;
+}
+
+.theme-toggle.dark-mode-true .react-toggle-track {
+  background-color: #0c2c59 !important;
+}
