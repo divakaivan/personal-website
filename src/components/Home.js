@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {SiApollographql} from "react-icons/si"
 import {GrGraphQl} from "react-icons/gr"
 
-import java from "../java-free-download.png";
+// import java from "../java-free-download.png";
 import ReactTooltip from "react-tooltip";
 
 const Div = styled.div`
@@ -47,18 +47,16 @@ const Home = () => (
             </h6>
         </section>
         <section>
-            <h2>Some of my skills:</h2>
+            <h2>Part of my tech stack:</h2>
             <h5>Frontend:</h5>
             <img width={75} src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" alt="React"/>
             <SiApollographql size={75}/>
             <h5 className="mt-3">Backend:</h5>
             <img width={75} src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" alt="JavaScript"/>
-            <GrGraphQl style={{color: "rgba(207, 0, 170, 0.85)"}} size={75}/>
+            <GrGraphQl style={{color: "rgba(207, 0, 170, 0.85)", marginLeft: "5px"}} size={75}/>
             <img width={75} src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" alt="Python"/>
-            <img data-tip="Beginner" width={75} src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/kotlin/kotlin.png" alt="Kotlin"/>
-            <img data-tip="Beginner" width={50} src={java} alt="Java"/>
         </section>
-        <h6 className="mt-4">More info on skills and what I am currently learning on my <a href="https://github.com/divakaivan" target="_blank" rel="noopener noreferrer" >GitHub Profile</a> readme.</h6>
+        <h6 className="mt-4">More info on skills, tech stack and what I am currently learning on my <a href="https://github.com/divakaivan" target="_blank" rel="noopener noreferrer" >GitHub Profile</a> readme.</h6>
         <ReactTooltip className="tooltip-extra-style" />
     </Div>
 );
